@@ -148,3 +148,7 @@ W części backendowej (plik `index.js`) dodajemy logikę związaną z obsługą
 ### (ee7be215351b8e3d51b37832761fdeac0978cb07)
 
 Następnym krokiem jest dodanie logiki do zapisu i zarządzania tablicą notatek na backendzie oraz umożliwienie kasowania notatek na frontendzie, a także aktualizacja styli.
+
+### (dfa9f6936579cb2f9fcabc18b7e58d36fcdce08d)
+
+Po zakończeniu implementacji możemy przejść do procesu wdrażania aplikacji na środowisko produkcyjne, zgodnie z notatkami do zajęć.
