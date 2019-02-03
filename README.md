@@ -129,3 +129,12 @@ npm install --save express body-parser
 ```
 
 W kodzie źródłowym aplikacji zmieniamy wcześniejszą wersję aplikacji na taką, która będzie korzystać z biblioteki `express`.
+
+### (b9b029295282fac7e9977e06a8426e9f904079c2)
+
+W tym momencie mamy dwie części aplikacji (frontend i backend), które są budowane oraz uruchamiane oddzielnymi skryptami. Aby mieć możliwość budowania i uruchamiania frontendu i backendu na raz potrzebujemy jeszcze jednego narzędzia, które zainstalujemy przez `npm`:
+```
+npm install --save-dev npm-run-all
+```
+
+Możemy je wykorzystać aby zrównoleglić uruchamianie serwera oraz procesu budowania frontendu poprzez skonstruowanie odpowiednich skryptów w pliku `package.json`.
