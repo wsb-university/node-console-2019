@@ -80,6 +80,7 @@ Następnie możemy dodać wywołanie polecenia serwowania z odpowiednimi paramet
 }
 ```
 
+### (86f70928d8219d5c6c241539723bc9958ecef44d)
 
 Kolejnym krokiem jest instalacja i konfiguracja narzędzia o nazwie `webpack`.
 
@@ -99,3 +100,6 @@ touch webpack.config.js
 Po utworzeniu pliku konfiguracyjnego możemy przejść do konfiguracji, jak w kodzie źródłowym.
 
 Po zainstalowaniu i skonfigurowaniu `webpack`'a możemy również wprowadzić zmiany w skrypcie uruchamiającym aplikację, dodając skrypt o nazwie `"build"` oraz zmieniając skrypt `"dev"` na taki, który będzie wywoływał `webpack-dev-server`. `serve` nie będzie nam już potrzebny.
+
+
+Aby zbudować aplikacją w trybie produkcyjnym dodamy możliwość czytania zmiennej środowiskowej w pliku konfiguracyjnym. Następnie na podstawie jej wartości zbudujemy aplikację dla środowiska produkcyjnego bądź deweloperskiego.
