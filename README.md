@@ -3,10 +3,7 @@
 
 ## Rozwiązania zadań
 
-### Pliki i katalogi
-Zadanie: W swoim katalogu domowym utwórz folder projektu o dowolnej nazwie a w nim katalog `src` zawierający pliki o nazwach `index.html`, `main.js` oraz `style.css`
-
-## Rozwiązanie zadań z wyjaśnieniem:
+### (df81cb765e33dc93ed5f056e7b937050b44278cc)
 Katalog projektu tworzymy poleceniem `mkdir` z argumentem będącym nazwą katalogu, np:
 ```
 mkdir app
@@ -55,3 +52,12 @@ Po dodaniu plików zapisujemy obecną rewizję poleceniem:
 ```
 git commit -m "Initial commit"
 ```
+
+W kolejnym zadaniu tworzymy projekt poleceniem `npm init` i uzupełniamy informacje o projekcie, bądź używamy ustawień domyślnych dodając flagę `-y`:
+```
+npm init -y
+```
+
+Aby sprawdzić zawartość pliku `package.json` możemy użyć polecenia `cat package.json`.
+
+Po utworzeniu projektu uruchamiamy edytor tekstu i tworzymy prostą, statyczną stronę, jak w kodzie źródłowym.

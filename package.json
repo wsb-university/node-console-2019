@@ -1,0 +1,20 @@
+{
+  "name": "node-console",
+  "version": "2.0.0",
+  "description": "University lecture project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wsb-university/node-console.git"
+  },
+  "keywords": ["node", "webpack"],
+  "author": "Adrian Juszczak <adrian@juszczak.io> (https://juszczak.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wsb-university/node-console/issues"
+  },
+  "homepage": "https://github.com/wsb-university/node-console#readme"
+}
