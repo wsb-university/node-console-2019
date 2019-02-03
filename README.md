@@ -120,3 +120,12 @@ npm install --save-dev nodemon
 ```
 
 Po zainstalowaniu `nodemon`'a dodajemy kolejne skrypty, które będą startowały serwer w trybie produkcyjnym oraz deweloperskim.
+
+### (227d25bf4f99452a972f8657ca9b788bb887f7d4)
+
+Pomimo możliwości rozwijania aplikacji bez użycia dodatkowych zależności, jest to proces zdecydowanie mało wydajny – zamiast tego warto posłużyć się gotowym frameworkiem, który ułatwi nam definiowanie ścieżek aplikacji, etc. Wykorzystamy do tego celu bibliotekę o nazwie `express` wraz z dodatkiem o nazwie `body-parser`:
+```
+npm install --save express body-parser
+```
+
+W kodzie źródłowym aplikacji zmieniamy wcześniejszą wersję aplikacji na taką, która będzie korzystać z biblioteki `express`.
