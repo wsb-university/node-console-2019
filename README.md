@@ -53,6 +53,8 @@ Po dodaniu plików zapisujemy obecną rewizję poleceniem:
 git commit -m "Initial commit"
 ```
 
+### (1a6ebdecd8e0001da7512d20b68dbd9af2c3b12a)
+
 W kolejnym zadaniu tworzymy projekt poleceniem `npm init` i uzupełniamy informacje o projekcie, bądź używamy ustawień domyślnych dodając flagę `-y`:
 ```
 npm init -y
@@ -61,3 +63,18 @@ npm init -y
 Aby sprawdzić zawartość pliku `package.json` możemy użyć polecenia `cat package.json`.
 
 Po utworzeniu projektu uruchamiamy edytor tekstu i tworzymy prostą, statyczną stronę, jak w kodzie źródłowym.
+
+
+Instalowanie zależności aplikacji odbywa się poprzez polecenie `npm install`.
+
+Aby testowo wyświetlić stronę, użyjemy prostego serwera o nazwie `serve`, który zainstalujemy poleceniem:
+```
+npm install --save-dev serve
+```
+
+Następnie możemy dodać wywołanie polecenia serwowania z odpowiednimi parametrami w `package.json` w sekcji `"scripts"`:
+```
+"scripts": {
+  "dev": "serve -n -p 8080 src"
+}
+```
