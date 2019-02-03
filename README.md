@@ -144,3 +144,7 @@ Możemy je wykorzystać aby zrównoleglić uruchamianie serwera oraz procesu bud
 Gdy nasze środowisko pracy jest już w pełni zautomatyzowane, możemy przejść do implementacji logiki aplikacji.
 
 W części backendowej (plik `index.js`) dodajemy logikę związaną z obsługą różnego typu zapytań obsługujących zarządzanie danymi po stronie serwera, natomiast w części frontendowej interfejs użytkownika związany z wyświetlaniem, dodawaniem oraz kasowaniem ich.
+
+### (ee7be215351b8e3d51b37832761fdeac0978cb07)
+
+Następnym krokiem jest dodanie logiki do zapisu i zarządzania tablicą notatek na backendzie oraz umożliwienie kasowania notatek na frontendzie, a także aktualizacja styli.

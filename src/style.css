@@ -3,3 +3,17 @@ body {
   color: #111;
   font-family: sans-serif;
 }
+
+.note {
+  cursor: pointer;
+}
+
+.note:hover {
+  color: #666;
+}
+
+.info {
+  color: #999;
+  font-size: 0.8em;
+  margin-left: 10px;
+}
