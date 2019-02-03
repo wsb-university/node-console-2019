@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack",
-    "build:prod": "PRODUCTION=true webpack"
+    "build:prod": "PRODUCTION=true webpack",
+    "server": "nodemon index.js",
+    "server:prod": "node index.js"
   },
   "repository": {
     "type": "git",

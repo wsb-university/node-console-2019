@@ -102,4 +102,21 @@ Po utworzeniu pliku konfiguracyjnego możemy przejść do konfiguracji, jak w ko
 Po zainstalowaniu i skonfigurowaniu `webpack`'a możemy również wprowadzić zmiany w skrypcie uruchamiającym aplikację, dodając skrypt o nazwie `"build"` oraz zmieniając skrypt `"dev"` na taki, który będzie wywoływał `webpack-dev-server`. `serve` nie będzie nam już potrzebny.
 
 
+### (f3601584867281a5ecdc24db1a0aff79e910f5c7)
+
 Aby zbudować aplikacją w trybie produkcyjnym dodamy możliwość czytania zmiennej środowiskowej w pliku konfiguracyjnym. Następnie na podstawie jej wartości zbudujemy aplikację dla środowiska produkcyjnego bądź deweloperskiego.
+
+
+Gdy podstawowa wersja frontendu jest już gotowa, możemy utworzyć plik serwera aplikacji:
+```
+touch index.js
+```
+
+Serwer możemy napisać używając Node.js bez żadnych zależności, jak w kodzie źródłowym.
+
+Chcąc mieć możliwość szybkiego rozwijania projektu backendowego, warto zainstalować narzędzie, które będzie uruchamiało aplikację za każdym razem, kiedy wykryta zostanie zmiana w kodzie. Możemy wykorzystać do tego narzędzie o nazwie `nodemon`, które zainstalujemy korzystając z `npm`:
+```
+npm install --save-dev nodemon
+```
+
+Po zainstalowaniu `nodemon`'a dodajemy kolejne skrypty, które będą startowały serwer w trybie produkcyjnym oraz deweloperskim.
