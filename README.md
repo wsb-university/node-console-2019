@@ -64,6 +64,7 @@ Aby sprawdzić zawartość pliku `package.json` możemy użyć polecenia `cat p
 
 Po utworzeniu projektu uruchamiamy edytor tekstu i tworzymy prostą, statyczną stronę, jak w kodzie źródłowym.
 
+### (e6c00bbe7b94772a10a90145510ad4b931cd1a9f)
 
 Instalowanie zależności aplikacji odbywa się poprzez polecenie `npm install`.
 
@@ -78,3 +79,23 @@ Następnie możemy dodać wywołanie polecenia serwowania z odpowiednimi paramet
   "dev": "serve -n -p 8080 src"
 }
 ```
+
+
+Kolejnym krokiem jest instalacja i konfiguracja narzędzia o nazwie `webpack`.
+
+Aby zainstalować narzędzie oraz niezbędne dodatki użyjamy po kolei poleceń:
+```
+npm install --save-dev webpack webpack-cli
+npm install --save-dev webpack-dev-server
+npm install --save-dev html-webpack-plugin
+npm install --save-dev copy-webpack-plugin
+```
+
+Po zainstalowaniu niezbędnych zależności tworzymy plik konfiguracyjny:
+```
+touch webpack.config.js
+```
+
+Po utworzeniu pliku konfiguracyjnego możemy przejść do konfiguracji, jak w kodzie źródłowym.
+
+Po zainstalowaniu i skonfigurowaniu `webpack`'a możemy również wprowadzić zmiany w skrypcie uruchamiającym aplikację, dodając skrypt o nazwie `"build"` oraz zmieniając skrypt `"dev"` na taki, który będzie wywoływał `webpack-dev-server`. `serve` nie będzie nam już potrzebny.
