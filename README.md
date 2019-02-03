@@ -138,3 +138,9 @@ npm install --save-dev npm-run-all
 ```
 
 Możemy je wykorzystać aby zrównoleglić uruchamianie serwera oraz procesu budowania frontendu poprzez skonstruowanie odpowiednich skryptów w pliku `package.json`.
+
+### (e9c86b80e518722c221cedcf0e656c86f2c0b6b3)
+
+Gdy nasze środowisko pracy jest już w pełni zautomatyzowane, możemy przejść do implementacji logiki aplikacji.
+
+W części backendowej (plik `index.js`) dodajemy logikę związaną z obsługą różnego typu zapytań obsługujących zarządzanie danymi po stronie serwera, natomiast w części frontendowej interfejs użytkownika związany z wyświetlaniem, dodawaniem oraz kasowaniem ich.

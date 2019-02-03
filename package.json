@@ -6,7 +6,7 @@
   "scripts": {
     "start": "run-p build:prod server:prod",
     "dev": "run-p build:dev server:dev",
-    "build:dev": "webpack",
+    "build:dev": "webpack --watch",
     "build:prod": "PRODUCTION=true webpack",
     "server:dev": "nodemon index.js",
     "server:prod": "PRODUCTION=true node index.js"
